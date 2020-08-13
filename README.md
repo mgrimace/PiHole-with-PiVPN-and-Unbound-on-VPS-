@@ -8,7 +8,7 @@
 * This setup uses WireGuard to connect to your PiVPN (and PiHole) which makes it fairly easy to add to devices.
 * I used a free tier of Amazon Web Services [AWS] but this should work on whatever ones you choose (e.g., Google, etc.)
 * You can then keep connected to PiHole from any devices (e.g., laptop, phone, etc.), from anywhere (i.e., not just on your home network)
-* * It's relatively easy to do yourself, and since it's all done manually (vs., a script) you can learn a bit as you go!
+* It's relatively easy to do yourself, and since it's all done manually (vs., a script) you can learn a bit as you go!
 * update added unbound recursive DNS server for safety/privacy!
 
 ## Step 1: Create a free Ubuntu server in AWS
@@ -39,7 +39,8 @@
 
 ## Step 6: add split-tunnel connection to your config
 ```sudo nano /etc/wireguard/configs/[config name].conf```
-* Change AllowedIPs from "0.0.0.0/0, ::0" to "[PiHole IP address]/32, [DNS IP]/32". DNS IP is listed in [interface] and by default 10.6.0.1/32.
+* Change AllowedIPs from "0.0.0.0/0, ::0" to "[PiHole IP address]/32, [DNS IP]/32". 
+* The [DNS IP] is listed in [interface] and by default 10.6.0.1/32.
 * Note spit-tunnelling only routes the DNS (i.e., PiHole ad-blocking) vs., all of your data through your VPN which will save bandwidth to keep you on the free tier.
 
 ## Step 7: display your config QR code to connect your mobile device
@@ -63,4 +64,4 @@
 ```sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf```
 
 ## Troubleshooting:
-# Before being able to remotely log in, I had to run the command ```chmod 600 /Users/[your name]/.ssh/PiVPNHOLE.pem```
+* Before being able to remotely log in, I had to run the command ```chmod 600 /Users/[your name]/.ssh/PiVPNHOLE.pem```
