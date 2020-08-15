@@ -11,7 +11,16 @@
 * It's relatively easy to do yourself, and since it's all done manually (vs., a script) you can learn a bit as you go!
 * update added unbound recursive DNS server for safety/privacy!
 
+# Table of Contents
+* [Create a VPS](#create-a-VPS)
+* [Install PiHole](#Install-PiHole)
+* [Install and setup VPN](#Install-and-setup-your-VPN)
+* [Install Unbound](#Install-Unbound)
+* [Notes and Troubleshooting](#Notes)
+
+# Create a VPS
 ## Step 1: Create a free Ubuntu server in AWS
+
 
 * Create an AWS account
 * Go to EC2, click launch instance, select “free tier” and choose Ubuntu (I picked 20.04)
@@ -20,6 +29,7 @@
 * In your EC2 terminal, note your PublicDNS (IPv4), it’ll look like: ec2-###.location.com, I call this [your host] below
 * Click Elastic IP to create an Elastic IP, then click actions and associate, and associate the Elastic IP to your new server
 
+# Install PiHole
 ## Step 2: Use Terminal to connect to your new Ubuntu server
 
 ```ssh -i /Users/[your user]/.ssh/PiVPNHOLE.pem ubuntu@[your host]``` 
@@ -29,6 +39,7 @@
 ```curl -sSL https://install.pi-hole.net | bash```
 * Take note of your PiHole's web interface IP and the password
 
+# Install and setup your VPN
 ## Step 4: install PiVPN
 ```curl -L https://install.pivpn.io | bash```
 
@@ -56,6 +67,7 @@
 * I set them to "on-demand" meaning it'll always be on
 * Go check out your PiHole at the address you saved in Step 2!
 
+# Install Unbound
 ## Step 9: Install Unbound
 
 * Connect back to your Ubuntu VPS in terminal
@@ -63,5 +75,6 @@
 * One thing to note, when you get to Configure Unbound instruction, it'll say "/etc/unbound/unbound.conf.d/pi-hole.conf", you actually need to add "sudo nano" to the start of that code in your Terminal to be able to create and paste in the configuration (or else you'll just get an error). Then just copy/paste in the text from the guide and hit save/exit.
 ```sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf```
 
+# Notes
 ## Troubleshooting:
 * Before being able to remotely log in, I had to run the command ```chmod 600 /Users/[your name]/.ssh/PiVPNHOLE.pem```
