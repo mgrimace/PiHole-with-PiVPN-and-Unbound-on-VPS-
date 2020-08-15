@@ -78,3 +78,6 @@
 # Notes
 ## Troubleshooting:
 * Before being able to remotely log in, I had to run the command ```chmod 600 /Users/[your name]/.ssh/PiVPNHOLE.pem```
+
+## Credits
+* Special thanks to @DasJason for inspiring this project, troubleshooting, and various code tips/tricks.
