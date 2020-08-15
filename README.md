@@ -76,7 +76,7 @@
 ```sudo nano /etc/unbound/unbound.conf.d/pi-hole.conf```
 
 # Notes
-## Troubleshooting:
+## Troubleshooting
 * Before being able to remotely log in, I had to run the command ```chmod 600 /Users/[your name]/.ssh/PiVPNHOLE.pem```
 
 ## Credits
