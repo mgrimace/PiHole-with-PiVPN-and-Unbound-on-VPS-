@@ -9,7 +9,7 @@
 * I used a free tier of Amazon Web Services [AWS] but this should work on whatever ones you choose (e.g., Google, etc.)
 * You can then keep connected to PiHole from any devices (e.g., laptop, phone, etc.), from anywhere (i.e., not just on your home network)
 * It's relatively easy to do yourself, and since it's all done manually (vs., a script) you can learn a bit as you go!
-* update added unbound recursive DNS server for safety/privacy!
+* update: added unbound recursive DNS server for safety/privacy!
 
 # Table of Contents
 * [Create a VPS](#create-a-VPS)
@@ -81,3 +81,5 @@
 
 ## Credits
 * Special thanks to @DasJason for inspiring this project, troubleshooting, and various code tips/tricks.
+* Thanks to Thank you to @afruitpie for helping me figure out split-tunnelling and how to download the configuration files. 
+* Thanks also to @kryten2k35 for making sure this method of PiHole isn't exposed to the entire world (i.e., double checking port 53 is closed so the DNS isn't public).
