@@ -24,7 +24,7 @@
 
 * Create an AWS account
 * Go to EC2, click launch instance, select “free tier” and choose Ubuntu (I picked 20.04)
-* Manually configure, and click through each step until you get to Security groups, and add the following: UDP, 51820, comment: WireGuard
+* Manually configure, and click through each step until you get to Security groups, and add the following: Custom UDP, Port Range: 51820, Source: 0.0.0.0/0, and Description: Wireguard
 * Download your new keypair and save it to .ssh (on mac, I created a folder called .ssh in my main user folder). I called mine PiVPNHOLE
 * In your EC2 terminal, note your PublicDNS (IPv4), it’ll look like: ec2-###.location.com, I call this [your host] below
 * Click Elastic IP to create an Elastic IP, then click actions and associate, and associate the Elastic IP to your new server
