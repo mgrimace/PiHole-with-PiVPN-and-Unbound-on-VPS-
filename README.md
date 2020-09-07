@@ -45,14 +45,15 @@
 
 ## Step 5: create your user profiles
 
-```pivpn add```
-* Name your user (e.g., mphone, mlaptop)
+```pivpn add [config name]```
+*  where [config name] is a unique name for each of your devices (e.g., mphone, mlaptop). You can repeat this step for as many devices that you want to connect to your Pi-hole.
 
 ## Step 6: add split-tunnel connection to your config
 ```sudo nano /etc/wireguard/configs/[config name].conf```
 * Change AllowedIPs from "0.0.0.0/0, ::0" to "[PiHole IP address]/32, [DNS IP]/32". 
 * The [DNS IP] is listed in [interface] and by default 10.6.0.1/32.
 * Note spit-tunnelling only routes the DNS (i.e., PiHole ad-blocking) vs., all of your data through your VPN which will save bandwidth to keep you on the free tier.
+* You'll need to repeat this for each [config name] you created in step 5.
 
 ## Step 7: display your config QR code to connect your mobile device
 ```pivpn -qr [config name, e.g., mphone]```
