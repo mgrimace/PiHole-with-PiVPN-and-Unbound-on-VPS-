@@ -85,4 +85,4 @@
 * Thanks to Thank you to @afruitpie for helping me figure out split-tunnelling and how to download the configuration files. 
 * Thanks also to @kryten2k35 for making sure this method of PiHole isn't exposed to the entire world (i.e., double checking port 53 is closed so the DNS isn't public).
 
-<a src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="cammarata.m" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#FF813F" data-position="" data-x_margin="18" data-y_margin="18"></a>
+<a href="https://www.buymeacoffee.com/cammarata.m" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
