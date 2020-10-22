@@ -45,7 +45,7 @@
 
 ## Step 5: create your user profiles
 
-```pivpn add [config name]```
+```pivpn add -n [config name]```
 *  where [config name] is a unique name for each of your devices (e.g., mphone, mlaptop). You can repeat this step for as many devices that you want to connect to your Pi-hole.
 
 ## Step 6: add split-tunnel connection to your config
