@@ -81,6 +81,7 @@
 * Before being able to remotely log in, I had to run the command ```chmod 600 /Users/[your name]/.ssh/PiVPNHOLE.pem```
 
 ## Credits
+* Thanks to @SuspectTyrannosaurus for fixing creating user profiles.
 * Special thanks to @DasJason for inspiring this project, troubleshooting, and various code tips/tricks.
 * Thanks to Thank you to @afruitpie for helping me figure out split-tunnelling and how to download the configuration files. 
 * Thanks also to @kryten2k35 for making sure this method of PiHole isn't exposed to the entire world (i.e., double checking port 53 is closed so the DNS isn't public).
