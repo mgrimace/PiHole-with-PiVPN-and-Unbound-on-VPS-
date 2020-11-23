@@ -62,6 +62,12 @@
 
 ```scp -i /Users/[Your Name]/.ssh/PiVPNHOLE.pem ubuntu@[your host]:~/configs/[config name, e.g., mlaptop] [destination on your computer, e.g., ~/Documents/wireguard]```
 
+Here's an example because this can be confusing:
+
+```scp -i /Users/example/.ssh/PiVPNHOLE.pem ubuntu@ec2-1-2-3-4.location.compute.amazonaws.com:~/configs/ /Users/example/wireguard```
+
+This will download all of your config files to a folder on your computer called wireguard
+
 ## Step 9: Install Wireguard on your device
 
 * Scan your QR code for your mobile devices, and/or install the downloaded configs for your laptop/desktop/other devices, turn them on.
