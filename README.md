@@ -29,6 +29,8 @@
 * In your EC2 terminal, note your PublicDNS (IPv4), it’ll look like: ec2-###.location.com, I call this [your host] below
 * Click Elastic IP to create an Elastic IP, then click actions and associate, and associate the Elastic IP to your new server
 
+**Note:** If you are planning to use this as a VPN (no split tunelling), use LightSail. AWS has a £0.12 / gb cost on outbound transfers. This means that if you use 1tb / month, you'll spend £120. If you use Lightsail, the £3.50 tier gets you 1tb / month which saves you £116.50.
+
 # Install PiHole
 ## Step 2: Use Terminal to connect to your new Ubuntu server
 
@@ -93,7 +95,7 @@ This will download all of your config files to a folder on your computer called 
 * Special thanks to @DasJason for inspiring this project, troubleshooting, and various code tips/tricks.
 * Thanks to Thank you to @afruitpie for helping me figure out split-tunnelling and how to download the configuration files. 
 * Thanks also to @kryten2k35 for making sure this method of PiHole isn't exposed to the entire world (i.e., double checking port 53 is closed so the DNS isn't public).
-* Thanks to @bee-san for troubleshooting tips and solutions
+* Thanks to [@bee-san](https://github.com/bee-san) for troubleshooting tips and solutions
 
 <h2>Buy me a coffee</h2>
 
