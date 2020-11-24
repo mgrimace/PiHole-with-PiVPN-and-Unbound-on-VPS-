@@ -93,6 +93,7 @@ This will download all of your config files to a folder on your computer called 
 * Special thanks to @DasJason for inspiring this project, troubleshooting, and various code tips/tricks.
 * Thanks to Thank you to @afruitpie for helping me figure out split-tunnelling and how to download the configuration files. 
 * Thanks also to @kryten2k35 for making sure this method of PiHole isn't exposed to the entire world (i.e., double checking port 53 is closed so the DNS isn't public).
+* Thanks to @bee-san for troubleshooting tips and solutions
 
 <h2>Buy me a coffee</h2>
 
