@@ -85,6 +85,8 @@ This will download all of your config files to a folder on your computer called 
 # Notes
 ## Troubleshooting
 * Before being able to remotely log in, I had to run the command ```chmod 600 /Users/[your name]/.ssh/PiVPNHOLE.pem```
+* After clicking "generate keys" in PiVpn, you may get `/tmp/setupVars.conf permission denied`. I solved this by deleting that file.
+* You may need to run the piVpn script as sudo. Run with `curl -L https://install.pivpn.io |  sudo bash`
 
 ## Credits
 * Thanks to @SuspectTyrannosaurus for fixing creating user profiles.
