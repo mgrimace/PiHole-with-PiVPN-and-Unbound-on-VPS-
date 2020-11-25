@@ -95,8 +95,11 @@ This will download all of your config files to a folder on your computer called 
 * Thanks also to @kryten2k35 for making sure this method of PiHole isn't exposed to the entire world (i.e., double checking port 53 is closed so the DNS isn't public).
 * Thanks to @bee-san for troubleshooting tips and solutions
 
-<h2>Buy me a coffee</h2>
+<h2>Support this project</h2>
 
-If you found this guide helpful, please consider buying me a coffee by clicking the link below to donate a few dollars. I'll do my best to keep this guide up to date and as user-friendly as possible. Thank you and take good care
+If you found this guide helpful, please consider buying me a coffee by clicking the link below. I'll do my best to keep this guide up to date and as user-friendly as possible. Thank you and take good care!
 
-<a href="https://www.buymeacoffee.com/cammarata.m" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=R4QX73RWYB3ZA)
+
+
+
